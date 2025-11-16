@@ -1,6 +1,9 @@
 import Hero from './components/Hero'
 import Features from './components/Features'
 import Shop from './components/Shop'
+import Gallery from './components/Gallery'
+import PillowScene from './components/PillowScene'
+import Admin from './components/Admin'
 import CTA from './components/CTA'
 
 function App() {
@@ -11,8 +14,9 @@ function App() {
           <a href="/" className="font-extrabold tracking-tight text-xl">OD Nameštaj</a>
           <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
             <a href="#shop" className="hover:text-gray-900">Shop</a>
+            <a href="#galerija" className="hover:text-gray-900">Galerija</a>
+            <a href="#admin" className="hover:text-gray-900">Dodaj</a>
             <a href="#kontakt" className="hover:text-gray-900">Kontakt</a>
-            <a href="/test" className="hover:text-gray-900">Test</a>
           </nav>
         </div>
       </header>
@@ -21,6 +25,9 @@ function App() {
         <Hero />
         <Features />
         <Shop />
+        <section id="galerija"><Gallery /></section>
+        <PillowScene />
+        <Admin />
         <CTA />
       </main>
 
